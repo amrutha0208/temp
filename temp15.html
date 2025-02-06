@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function f1(){
+   let v=Number(document.getElementById("num1").value);
+   let k=Number(document.getElementById("num2").value);
+   msg.innerHTML=`${v}+${k}=${v+k}`;
+   n.innerHTML=`${v}-${k}=${v-k}`
+   m.innerHTML=`${v}*${k}=${v*k}`
+   o.innerHTML=`${v}/${k}=${v/k}`
+}
+  </script>
+<body>
+   <div> 
+    <p><input type="number" id="num1"place holder="enter num1"></p>
+    <p><input type="number" id="num2"place holder="enter num2"></p>
+    <p><button onclick="f1()">submit</button></p>
+   </div> 
+   <div id="msg"></div>
+   <div id="n"></div>
+   <div id="m"></div>
+   <div id="o"></div>
+</body>
+</html>

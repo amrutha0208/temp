@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nice{
+            display: flex;
+            margin-top: 250px;
+            justify-content: center;
+        }
+       .cute{
+        height:150px;
+        width:200px ;
+        padding:  20px;
+        border: 2px solid;
+   text-align: center;
+   border-radius: 10px;
+
+       } 
+  
+       button{
+        width: 200px;
+        background-color: blue;
+        border-radius: 10px;
+       }
+       .neww{
+        display: flex;
+        justify-content: center;
+        font-size: medium;
+       }
+    </style>
+</head>
+<script>
+    function f1(){
+        let name1="amrutha.ec.410@gmail.com";
+        let password1="Amrutha_02";
+        let v=document.getElementById("name").value;
+        let k=document.getElementById("password").value;
+        if(v== ""||k==""){
+            msg.innerHTML="enter details";
+        }
+        else if(v==name1 & k==password1){
+          msg.innerHTML="wellcome";
+       }
+       else{
+        msg.innerHTML="invalid log";
+       }
+    }
+</script>
+<body>
+    <p class="neww"> <div id="msg"></div></p>
+    <div class="nice">
+       
+        <div class="cute">
+           <div class="box">
+            <p> <input type="text" id="name" placeholder="enter mail" style="width: 190px;" ></p>
+             <p><input type="password" id="password" placeholder="enter password" style="width: 190px"></p>
+             <p><button type="submit" onclick="f1()">Log In</button></p>
+        </div>
+    </div>       
+    </div>
+</body>
+</html>

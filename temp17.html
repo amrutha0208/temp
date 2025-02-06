@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function f1(){
+        let a=document.getElementById("name").value;
+        let b=document.getElementById("email").value;
+        let c=document.getElementById("password").value;
+        let d=document.getElementById("DOB").value;
+        msg.innerHTML=a+","+b+","+c+","+d;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1 style="text-decoration: underline;">New User SignUp</h1>
+        <p><input type="text" id="name" placeholder="enter the name"/></p>
+        <p><input type="text" id="email" placeholder="enter the email"/></p>
+        <p><input type="password" id="password" placeholder="enter the password"/></p>
+        <p><input type="date" id="DOB" placeholder="enter the DOB"/></p>
+        <p><button onclick="f1()">Register</button></p>
+    </div>
+    <div id="msg"></div>
+</body>
+</html>
