@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divide"></div>
+    <script>
+    
+        const products=[
+            {id:1,name:"p1",price:24},
+            {id:2,name:"p2",price:25},
+            {id:3,name:"p3",price:22},
+            {id:4,name:"p4",price:21},
+        ];
+        let str="";
+        products.map((value)=>{
+            str+=`
+            <li>${value.id}-${value.name}-${value.price}-<button>add to cart<button></li>
+            `
+        })
+        divide.innerHTML=str;
+    </script>
+</body>
+</html>
